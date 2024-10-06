@@ -1,0 +1,394 @@
+/* General styles */
+.app {
+  text-align: center;
+}
+
+.header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+.flower-icon {
+  position: absolute;
+  left: 10px; /* Adjust position of the flower icon */
+}
+
+.logo {
+  margin: 0 30px; /* Add margin for spacing between flower and logo */
+  font-weight: bold;
+  font-size: 40px; /* Make the logo bold */
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+  position: absolute;
+  right: 10px; /* Align icons to the right */
+}
+
+.navigation {
+  margin-top: 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.styled-hr {
+  border: none; /* Remove default border */
+  height: 1px; /* Set the height of the line */
+  background-color: rgba(0, 0, 0, 0.1); /* Set the color of the line */
+  width: 96%; /* Set the width of the line */
+  margin-left: auto; /* Center the line */
+  margin-right: auto; /* Center the line */
+}
+
+.discover-heading {
+  font-weight: 300;
+  margin-top: 40px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+}
+
+.items-header {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: flex-start; /* Align to the left */
+  margin: 25px;
+  width: 96%; /* Adjust width */
+}
+
+.items-count {
+  font-size: 18px; /* Change font size */
+  font-weight: 600; /* Make text bold */
+  color: #333; /* Set text color */
+  margin-right: 10px; /* Space between items count and hide/show filter */
+}
+
+.hide-filter {
+  color: grey; /* Grey color for hide/show filter text */
+  text-decoration: underline; /* Underline */
+  cursor: pointer;
+  padding-left: 30px; /* Pointer cursor on hover */
+}
+
+.recommended {
+  margin-left: auto; /* Pushes the recommended text to the far right */
+}
+
+.filters {
+  width: 180px; /* Fixed width for the filters */
+  text-align: left;
+  margin-right: 25px;
+  padding: 15px; /* Reduced space between filters and products */
+}
+
+/* Product grid styles */
+.content {
+  display: flex;
+}
+
+.products {
+  display: grid;
+  grid-gap: 4px; /* Space between products */
+  margin: 10px; /* Reduced margin for a compact layout */
+  flex-grow: 1; /* Allow products to take up remaining space */
+}
+
+.product {
+  padding: 8px; /* Reduced padding for a tighter fit */
+  text-align: center;
+  border-radius: 8px; /* Rounded corners */
+}
+
+.product img {
+  width: 100%; /* Set the width to 100% to fit the container */
+  height: 250px; /* Fixed height for all images */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.product h3 {
+  font-size: 18px; /* Size of product name */
+  margin: 10px 0; /* Spacing above and below the product name */
+}
+
+.like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: grey;
+}
+
+/* Filter styles */
+.ideal-for {
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.ideal-for ul {
+  list-style-type: none; /* Remove default list style */
+  padding-left: 0; /* Remove default padding */
+}
+
+.ideal-for li {
+  margin: 5px 0; /* Space between filter items */
+}
+
+.side {
+  font-size: 15px;
+  font-style: normal;
+  color: grey;
+  text-align: left;
+}
+.siding{
+  font-size:18px;
+  font-style:normal;
+  color:grey;
+}
+.product-name h4 {
+  margin-bottom: 1px; /* Reduce bottom margin of product name */
+}
+/* Footer section */
+.footer-section {
+  background-color: black;
+  color: white;
+  padding-left: 100px;
+  padding-top: 40px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; /* Reduced spacing between blocks */
+  text-align: left;
+}
+
+.footer-block h3 {
+  font-size: 20px;
+  margin-bottom: 5px; /* Reduced space below headings */
+  text-align: left;
+}
+
+.footer-block p {
+  font-size: 15px;
+  margin-bottom: 10px; /* Reduced space below paragraphs */
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  gap: 10px;
+}
+
+.email-input {
+  padding: 10px;
+  border: none;
+  width: 300px;
+}
+
+.subscribe-button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: grey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-block .currency {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.flag-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contact-block p {
+  margin-bottom: 5px; /* Reduced space between paragraphs */
+}
+
+.footer-line {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0; /* Reduced space around horizontal lines */
+}
+
+.block3-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block3-col {
+  width: 48%;
+}
+.footer-block h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.social-icons, .payment-icons {
+  display: flex;
+  gap: 10px; /* Adds space between the icons */
+  justify-content: left;
+  align-items: center;
+}
+
+.social-icon, .payment-icons img {
+  width: 50px; /* Set a fixed width for the icons */
+  height: 50px; /* Set a fixed height for the icons */
+  object-fit: contain; /* Ensures the image fits within the container */
+  border-radius: 5px; /* Optional, for slight rounded corners */
+}
+.social-icons img {
+  width: 25px;  /* Set a fixed width for the social icons */
+  height: 25px; /* Set a fixed height for the social icons */
+  object-fit: contain; /* Maintain aspect ratio and fit within dimensions */
+  margin-right: 10px; /* Optional spacing between icons */
+  border-radius:50%;
+}
+/* Desktop: 4 products per row by default */
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Default for desktop */
+  gap: 10px;
+}
+/* Base styles for all devices */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Styles for desktop */
+.product {
+  flex: 0 0 25%; /* 4 products per row */
+}
+
+/* Styles for tablets */
+@media (max-width: 768px) {
+  .product {
+      flex: 0 0 33.33%; /* 3 products per row */
+  }
+}
+
+/* Styles for mobile */
+@media (max-width: 480px) {
+  .product {
+      flex: 0 0 50%; /* 2 products per row */
+  }
+}
+
+@media (max-width: 320px) {
+  .product {
+      flex: 0 0 100%; /* 1 product per row */
+  }
+}
+/* Base font size */
+body {
+  font-size: 16px;
+}
+
+/* Styles for tablets */
+@media (max-width: 768px) {
+  body {
+      font-size: 14px; /* Slightly smaller text for tablets */
+  }
+}
+
+/* Styles for mobile */
+@media (max-width: 480px) {
+  body {
+      font-size: 12px; /* Even smaller text for mobile */
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-section {
+  display: grid; /* Use grid for layout */
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
+  background-color: black; /* Black background */
+  color: white; /* Text color */
+  padding: 20px;
+  gap: 10px; /* Space between grid items */
+}
+
+.footer-block {
+  padding: 10px; /* Add padding to each block */
+}
+
+.email-input {
+  width:70%; /* Make input take full width */
+  padding: 10px;
+  padding-left:20px;
+  border: none;
+}
+
+.subscribe-button {
+  padding: 10px;
+  border: none;
+  background-color: red; /* Button color */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background-color:red; /* Button hover color */
+}
+
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .footer-section {
+   /* grid-template-columns: 1fr; Stack in one column on very small screens */
+    grid-template-rows: repeat(2, auto); /* 4 rows */
+    grid-template-columns: repeat(2,auto);
+  }
+}
+.middle{
+  background-color: black;
+  color:white;
+  padding:30px;
+}
+.footer-block {
+  padding: 5px; /* Reduced padding for smaller screens */
+}
+@media (max-width: 400px) {
+  /* Further reduce font sizes for very small screens */
+  .footer-section {
+    font-size: 10px; /* Even smaller font size */
+  }
+
+}
+.product-name {
+  display: flex;
+  align-items: center; /* Aligns items vertically centered */
+  justify-content: space-between; /* Places space between the text and heart icon */
+}
+
+.heart-icon {
+  padding-top:10px;
+  margin-left:18px; /* Adds some space between the text and the icon */
+  cursor: pointer;
+  padding-right:10px /* Changes cursor to pointer for the heart icon */
+}
